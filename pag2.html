@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composicion de las bases de Datos</title>
+    
+    <link rel="icon" type="image/png" href="imagenes/logo bbb.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="pags.css">
+    <link rel="stylesheet" href="paquetes/node_modules/boxicons/css/boxicons.min.css">
+    
+</head>
+<body>
+    <div class="general grid gap-8 pb-8 items-center justify-center h-screen overflow-auto">
+
+        <div class="barraTop grid fixed top-0 left-0 p-2 bg-white w-screen justify-between items-center">
+            <article class="titulo grid gap-4 grid-cols-2 justify-start">
+                <img src="imagenes/logo bbb.png">
+                <button class="text-3xl" ><a href="index.html">Importancia de la Base de Datos</a></button>
+            </article>
+
+            <article>
+                
+                    <button id="toggleButton" class="p-2 rounded-full">
+                        <i class='bx bx-search-alt'></i>
+                    </button>
+                    <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg ">
+                        <ul class="py-1">
+                            <li><a href="index.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Base de datos</a></li>
+                            <li><a href="pag1.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Composición</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tipos</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tipos de Gestores</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Modelos</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Formas Normales</a></li>
+                        </ul>
+                    </div>
+                
+                
+            </article>
+        </div>
+
+        <br>
+
+        <div class="contenido">
+            <h2 class="text-5xl text-center p-4 my-52">
+                ¿Que conforma una base de datos?
+            </h2>
+
+            <article class="descripcion  my-4">
+                <p class="text-descripcion text-xl px-16 py-4 my-8 bg-red-500 rounded-lg">
+                    -Una Base de datos está conformada por múltiples elementos, entre ellos las Tablas, los Registros,
+                    Los campos, Las Claves y mucho más
+                </p>
+
+            </article>
+
+            <div class="tarjetas items-center mx-8 p-2 bg-gray-500 rounded-lg ">
+                <article class="tarjeta bg-gray-500 hidden-element p-8 ">
+                    <br>
+
+                    <h3 class="text-center text-3xl my-4 ">Composición de la Base de datos</h3>
+                    
+                    <div class="info grid grid-cols-1 grid-rows-1 py-16">
+                        <div class="texto-boton grid align-evenly justify-items-center">
+                            <p class="mx-36">
+                                Tablas: Son la base de una base de datos relacional. Cada tabla está compuesta 
+                                por filas y columnas. Las columnas representan los atributos de los datos 
+                                (como nombre, edad, dirección), mientras que las filas contienen los registros 
+                                individuales de esos dato.
+                                <br>
+                                <br>
+                                <img class="mx-auto" src="imagenes/Bases-de-datos3-removebg-preview.png" alt="">
+                                <br>
+                                <br>
+                                Registros: Cada fila en una tabla se llama registro. Un registro es una colección 
+                                de datos relacionados que se almacenan juntos. Por ejemplo, en una tabla de “Clientes”, 
+                                cada fila podría representar un cliente diferente.
+                                <br>
+                                <br>
+                                <img class="mx-auto" src="imagenes/Bases-de-datos3-removebg-preview.png" alt="">
+                                <br>
+                                <br>
+                                Campos: Las columnas de una tabla se llaman campos. Cada campo contiene un tipo específico 
+                                de dato, como texto, número, fecha, etc. Por ejemplo, en una tabla de “Clientes”, podrías 
+                                tener campos como “Nombre”, “Apellido”, "Correo Electrónico".
+                                <br>
+                                <br>
+                                <img class="mx-auto" src="imagenes/Bases-de-datos3-removebg-preview.png" alt="">
+                                <br>
+                                <br>
+                                Claves Primarias: Una clave primaria es un campo o conjunto de campos cuyos valores 
+                                son únicos en cada fila de una tabla. Sirve para identificar de forma unívoca cada registro en la tabla.
+                                <br>
+                                <br>
+                                <img class="mx-auto" src="imagenes/Bases-de-datos3-removebg-preview.png" alt="">
+                                <br>
+                                <br>
+                                Claves Foráneas: Son campos que establecen una relación entre dos tablas. Una clave foránea 
+                                en una tabla apunta a una clave primaria en otra tabla, permitiendo así la vinculación de datos entre tablas.
+                                <br>
+                                <br>
+                                <img class="mx-auto" src="imagenes/Bases-de-datos3-removebg-preview.png" alt="">
+                                <br>
+                                <br>
+                                Índices: Los índices se utilizan para acelerar las consultas y búsquedas en una base de datos. 
+                                Funcionan como guías que permiten acceder rápidamente a los datos deseados.
+                                <br>
+                                <br>
+                                <img class="mx-auto" src="imagenes/Bases-de-datos3-removebg-preview.png" alt="">
+                                <br>
+                                <br>
+                                Consultas: Son instrucciones que se utilizan para acceder, modificar, agregar o eliminar 
+                                datos en una base de datos. Las consultas permiten interactuar con los datos de manera flexible y eficiente.
+                                <br>
+                                <br>
+                                <img class="mx-auto" src="imagenes/Bases-de-datos3-removebg-preview.png" alt="">
+                                <br>
+                                <br>
+                                Formularios: Se utilizan para ingresar y modificar datos en una base de datos de manera más amigable y estructurada.
+                                <br>
+                                <br>
+                                <img class="mx-auto" src="imagenes/Bases-de-datos3-removebg-preview.png" alt="">
+                                <br>
+                                <br>
+                                Informes: Son utilizados para presentar la información contenida en una base de datos de manera organizada y comprensible
+                                <br>
+                                <br>
+                                <img class="mx-auto" src="imagenes/Bases-de-datos3-removebg-preview.png" alt="">
+                            </p>
+
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </article>
+
+                
+            </div>
+            <div class="espacio my-8">
+                Hecho por: Jorge Rivero
+            </div>
+        </div>
+
+    </div>
+    <script src="pagsFunctions.js"></script>
+</body>
+</html>
