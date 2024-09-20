@@ -1,22 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <title>Mi Proyecto con TailwindCSS</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de Datos</title>
+    <link rel="icon" type="image/png" href="imagenes/logo bbb.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="paquetes/node_modules/boxicons/css/boxicons.min.css">
+    <link rel="stylesheet" href="paquetes/node_modules/sweetalert2/dist/sweetalert2.min.css">
+    <a href="mailto:jsamiju13@gmail.com" class="correo">jsamiju13@gmail.com</a>
 </head>
-<body >
+<body class="">
+    <div class="general grid gap-8 pb-8 items-center justify-center h-screen overflow-auto">
 
-  <div class="p-6 max-w-sm mx-auto bg-white rounded-xl shadow-md flex items-center space-x-4">
-    <div class="flex-shrink-0">
-      <img class="h-12 w-12" src="assets/logo bbb.png" alt="ChitChat Logo">
-    </div>
-    <div>
-      <div class="text-xl font-medium text-black">ChitChat</div>
-      <p class="text-gray-500">You have a new message!</p>
-    </div>
-  </div>
+        <div class="barraTop grid fixed top-0 left-0 p-2 bg-white w-screen justify-between items-center">
+            <article class="titulo grid gap-4 grid-cols-2 justify-start">
+                <img src="imagenes/logo bbb.png">
+                <h1 class="text-3xl">Base de Datos</h1>
+            </article>
 
+            <article>
+                <button id="botonContacto"><i class='bx bxs-contact ' ></i></button>
+                
+                    <button id="toggleButton" class="p-2 rounded-full">
+                        <i class='bx bx-search-alt'></i>
+                    </button>
+                    <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg">
+                        <ul class="py-1">
+                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Base de datos</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Importancia</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tipos</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tipos de Gestores</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Modelos</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Formas Normales</a></li>
+                        </ul>
+                    </div>
+                
+                
+            </article>
+        </div>
+
+        <br>
+
+        <div class="contenido">
+            <h2 class="text-5xl text-center p-4 my-52">
+                Que es una base de datos?
+            </h2>
+
+            <article class="descripcion  my-4">
+                <p class="text-descripcion text-xl px-16 py-4 my-8 bg-red-500 rounded-lg">
+                        -Una base de datos es un conjunto organizado de datos almacenados 
+                    y accesibles electrónicamente. Permite la gestión eficiente de 
+                    grandes volúmenes de información, facilitando su búsqueda, 
+                    actualización y análisis.
+                </p>
+
+            </article>
+                
+
+            <div class="tarjetas items-center mx-8 p-2 bg-gray-500 rounded-lg ">
+
+                <h2 class="text-5xl text-center p-4 my-16">
+                    Conoce más sobre bases de datos!
+                </h2>
+
+
+                <article class="tarjeta bg-gray-500 hidden-element p-8 ">
+                    <br>
+
+                    <h3 class="text-center text-3xl my-4 ">Composición de la Base de datos</h3>
+
+                    <div class="info grid grid-cols-2">
+                        <div class="texto-boton grid align-evenly justify-items-center">
+                            <p class="mx-8">
+                                Las bases de datos tienen una estructura sencilla pero que abarca una gran
+                                cantidad de posibilidades, alojar información y organizarla es muy fácil y útil 
+                                con la organización correcta
+                            </p>
+
+                            <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:bg-blue-700 hover:shadow-lg hover:scale-105">
+                                <i class='bx bx-info-circle' ></i>
+                                ¡Leer más!
+                            </button>
+                        </div>
+                        <img src="imagenes/diseno-de-bases-de-datos-01-removebg-preview.png">
+                        
+                    </div>
+                </article>
+
+                    <article class="tarjeta bg-white hidden-element p-8 rounded-lg">
+                        
+
+                        <h3 class="text-center text-3xl my-4">Importancia de las base de datos</h3>
+
+                        <div class="info grid grid-cols-2">
+                            <img src="imagenes/network-server-cloud-storage-database-600nw-2433981305-removebg-preview.png">
+                            <div class="texto-boton grid align-evenly justify-items-center">
+                                <p>
+                                    Las bases de datos son realmente utiles y escenciales para todas 
+                                    las empresas pequeñas medianas y grandes del siglo XXI, ¿Quieres saber porqué?
+                                </p>
+
+                                <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:bg-blue-700 hover:shadow-lg hover:scale-105">
+                                    <i class='bx bx-info-circle' ></i>
+                                    ¡Leer más!
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="tarjeta bg-gray-500 hidden-element p-8 ">
+                        <br>
+
+                        <h3 class="text-center text-3xl my-4 ">Tipos de Bases de Datos</h3>
+
+                        <div class="info grid grid-cols-2">
+                            <div class="texto-boton grid align-evenly justify-items-center">
+                                <p class="mx-8">
+                                    Las bases de datos pueden ser muy diferentes, Por ello debes asegurarte 
+                                    de elegir la que mejor se adapte a las necesidades de tu empresa!
+                                </p>
+
+                                <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:bg-blue-700 hover:shadow-lg hover:scale-105">
+                                    <i class='bx bx-info-circle' ></i>
+                                    ¡Leer más!
+                                </button>
+                            </div>
+                            <img src="imagenes/Recuperar-Banco-de-Dados-removebg-preview.png">
+                            
+                        </div>
+                    </article>
+
+                    <article class="tarjeta bg-white hidden-element p-8 rounded-lg">
+                        <br>
+
+                        <h3 class="text-center text-3xl my-4">Tipos de gestores de bases de datos</h3>
+
+                        <div class="info grid grid-cols-2">
+                            <img src="imagenes/postgresql.png" class="p-16">
+
+                            <div class="texto-boton grid align-evenly justify-items-center">
+                                <p >
+                                    similar a los lenguaje de programación, las bases de datos tienen 
+                                    distintos gestores que te ayudaran con la formación de tu base de datos
+                                </p>
+
+                                <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:bg-blue-700 hover:shadow-lg hover:scale-105">
+                                    <i class='bx bx-info-circle' ></i>
+                                    ¡Leer más!
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+                    
+                    <article class="tarjeta bg-gray-500 hidden-element p-8 ">
+                    
+                        <br>
+
+                        <h3 class="text-center text-3xl my-4">Modelo de la base de datos</h3>
+
+                        <div class="info grid grid-cols-2">
+                            <div class="texto-boton grid align-evenly justify-items-center">
+                                <p class="mx-8">
+                                    Modelo Entidad-Relación. uno de los 
+                                    Términos más Escenciales y Nucleares de la base de datos
+                                </p>
+
+                                <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:bg-blue-700 hover:shadow-lg hover:scale-105">
+                                    <i class='bx bx-info-circle' ></i>
+                                    ¡Leer más!
+                                </button>
+                            </div>
+                            <img src="imagenes/Bases-de-datos3-removebg-preview.png">
+                            
+                        </div>
+                    </article>
+
+                    <article class="tarjeta bg-white hidden-element p-8 rounded-lg">
+                        
+
+                        <h3 class="text-center text-3xl my-4">Formas de Normalización en las Bases de datos</h3>
+
+                        <div class="info grid grid-cols-2">
+                            <img src="imagenes/Diseño-sin-título-54-qbse68bgd5u6zzfaq5nzq4g7738hor4q0oppf82b2g-removebg-preview.png">
+                            <div class="texto-boton grid align-evenly justify-items-center">
+                                <p>
+                                    Las bases de datos, similar al PEP8 en python, Poseen una serie de normas y reglas
+                                    que como programadores debemos seguir para no cometer errores con su diseño, ¿quieres saber cuales son?
+                                </p>
+
+                                <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded transition duration-300 ease-in-out transform hover:bg-blue-700 hover:shadow-lg hover:scale-105">
+                                    <i class='bx bx-info-circle' ></i>
+                                    ¡Leer más!
+                                </button>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+                <div class="espacio my-8">
+                    Hecho por: Jorge Rivero
+                </div>
+        </div>
+        
+            
+            
+            
+        
+    </div>
+    <script src="functions.js"></script>
+    <script src="paquetes/node_modules/sweetalert2/dist/sweetalert2.min.js"></script>
 </body>
 </html>

@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+*{
+    font-family: 'Lovelo', sans-serif;
+    font-weight: bold;
+    scrollbar-width: none;
+}
+
+.hidden-element {
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.navbar {
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.navbar.transparent {
+    background-color: transparent;
+}
+
+.navbar.solid {
+    background-color: #ffffff; /* Cambia este color según tus necesidades */
+}
+
+
+body{
+    background-image: linear-gradient(to bottom, #071952, #37B7C3);
+}
+
+img{
+    width: 2rem;
+}
+
+h2{
+    color: #EBF4F6;
+    text-shadow: 2px 2px 4px rgba(8, 131, 149, 0.5);
+}
+
+h3{
+    color: #071952;
+}
+
+.general{
+    grid-template-rows: auto auto auto;
+    scrollbar-width: none;
+}
+
+.barraTop{
+    grid-template-rows: auto;
+    grid-template-columns: max-content max-content;
+}
+
+.titulo{
+    grid-template-columns: auto max-content;
+}
+.barraTop i{
+    color: black;
+    font-size: 2vw;
+}
+
+.descripcion p{
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+    background-color: #37B7C3;
+    color: #EBF4F6;
+}
+
+.contenido{
+    width: 95vw;
+    height: 80vh;
+
+}
+
+.tarjetas{
+    justify-items: center;
+    background-color: #EBF4F6;
+    box-shadow: 3px 3px 4px rgba(0, 0, 0, 0.5);
+    margin-bottom: 5vw;
+    
+}
+
+.tarjetas h2{
+    color: #37B7C3;
+
+}
+
+.tarjeta img{
+    width: 30rem;
+}
+
+.tarjeta.bg-white{
+    background-color: #088395;
+}
+
+.tarjeta.bg-white button{
+    background-color: #EBF4F6;
+    color: #088395;
+}
+
+.tarjeta.bg-white p {
+    color: #EBF4F6;
+}
+
+.tarjeta.bg-white h3 {
+    text-shadow: 2px 2px 4px rgba(235, 244, 246, 0.5);
+}
+
+.tarjeta.bg-gray-500{
+    background-color: #EBF4F6;
+}
+
+.tarjeta.bg-gray-500 button{
+    background-color: #088395;
+    color: #EBF4F6;
+}
+
+.tarjeta.bg-gray-500 p {
+    color: #1c1c1c;
+}
+
+.tarjeta.bg-gray-500 h3 {
+    text-shadow: 2px 2px 4px rgba(8, 131, 149, 0.5);
+}
+
+
+.tarjetaB img{
+    width: 30rem;
+}
+
+.texto-boton{
+    align-content: space-evenly;
+}
+
+
+@font-face {
+    font-family: 'Lovelo';
+    src: url('Lovelo/Lovelo\ Black.otf') format('opentype'),
+        url("Lovelo/Lovelo\ Line\ Bold.otf") format("opentype"),
+        url("Lovelo/Lovelo\ Line\ Light.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
