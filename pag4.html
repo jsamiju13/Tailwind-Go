@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Composicion de las bases de Datos</title>
+    
+    <link rel="icon" type="image/png" href="imagenes/logo bbb.png">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="pags.css">
+    <link rel="stylesheet" href="paquetes/node_modules/boxicons/css/boxicons.min.css">
+    
+</head>
+<body>
+    <div class="general grid gap-8 pb-8 items-center justify-center h-screen overflow-auto">
+
+        <div class="barraTop grid fixed top-0 left-0 p-2 bg-white w-screen justify-between items-center">
+            <article class="titulo grid gap-4 grid-cols-2 justify-start">
+                <img src="imagenes/logo bbb.png">
+                <button class="text-3xl" ><a href="index.html">Tipos Gestores de Bases de Datos</a></button>
+            </article>
+
+            <article>
+                
+                    <button id="toggleButton" class="p-2 rounded-full">
+                        <i class='bx bx-search-alt'></i>
+                    </button>
+                    <div id="dropdownMenu" class="hidden absolute right-0 mt-2 w-48 bg-white border border-gray-200 rounded-md shadow-lg ">
+                        <ul class="py-1">
+                            <li><a href="index.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Base de datos</a></li>
+                            <li><a href="pag1.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Composición</a></li>
+                            <li><a href="pag2.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Importancia</a></li>
+                            <li><a href="pag3.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tipos</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Modelos</a></li>
+                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Formas Normales</a></li>
+                        </ul>
+                    </div>
+                
+                
+            </article>
+        </div>
+
+        <br>
+
+        <div class="contenido">
+            <h2 class="text-5xl text-center p-4 my-52">
+                ¿Donde se Administran las Bases de Datos?
+            </h2>
+
+            <article class="descripcion  my-4">
+                <p class="text-descripcion text-xl px-16 py-4 my-8 bg-red-500 rounded-lg">
+                    -Similar a las plataformas que cada lenguaje de programación tiene para manejarlo, las bases de datos tienen gestores
+                    donde mediante consola o interfaces gráficas podremos administrar correctamente las relaciones entre datos que necesitemos
+                </p>
+
+            </article>
+
+            <div class="tarjetas items-center mx-8 p-2 bg-gray-500 rounded-lg ">
+                <article class="tarjeta bg-gray-500 hidden-element p-8 ">
+                    <br>
+
+                    <h3 class="text-center text-3xl my-4 ">Gestores de Bases de Datos</h3>
+                    
+                    <div class="info grid grid-cols-1 grid-rows-1 py-16">
+                        <div class="texto-boton grid align-evenly justify-items-center">
+                            <p class="mx-36">
+                                <span>Bases de datos SQL:</span> Almacenan los datos en tablas con filas y columnas. Cada tabla 
+                                tiene una clave primaria que identifica de manera única cada fila. Las relaciones entre las tablas 
+                                se establecen mediante claves externas.
+                                <br><br>
+                                <span>Estructura Tabular:</span> Los datos se organizan en tablas, lo que facilita la consulta y la manipulación 
+                                de datos mediante SQL (Structured Query Language).
+                                <br><br>
+                                <span>Integridad de Datos:</span> Las bases de datos relacionales aseguran la integridad de los datos mediante restricciones y reglas.
+                                <br><br>
+                                <span>Transacciones ACID:</span> Garantizan que las transacciones sean atómicas, consistentes, aisladas y duraderas.
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <span>Bases de datos NoSQL:</span> Las bases de datos no relacionales no siguen el esquema tabular tradicional.
+                                En su lugar, utilizan diferentes modelos de datos, como documentos, grafos, columnas y pares clave-valor.
+                                <br><br>
+                                <span>Flexibilidad:</span> Permiten almacenar datos no estructurados y semiestructurados, 
+                                lo que las hace ideales para aplicaciones con requisitos de datos cambiantes.
+                                <br><br>
+                                <span>Escalabilidad Horizontal:</span> Pueden manejar grandes volúmenes de datos 
+                                distribuyendo la carga a través de múltiples servidores.
+                                <br>
+                                <br>
+                                <img class="mx-auto" src="imagenes/NoSQL4__1_-removebg-preview.png" alt="">
+                            </p>
+                            
+                        </div>
+                        
+                        
+                    </div>
+                </article>
+
+                
+            </div>
+            <div class="espacio my-8">
+                Hecho por: Jorge Rivero
+            </div>
+        </div>
+
+    </div>
+    <script src="pagsFunctions.js"></script>
+</body>
+</html>
