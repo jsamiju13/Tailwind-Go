@@ -17,7 +17,7 @@
         <div class="barraTop grid fixed top-0 left-0 p-2 bg-white w-screen justify-between items-center">
             <article class="titulo grid gap-4 grid-cols-2 justify-start">
                 <img src="imagenes/logo bbb.png">
-                <button class="text-3xl" ><a href="index.html">Tipos de Bases de Datos</a></button>
+                <button class="text-3xl" ><a href="index.html">Modelo de la Base de Datos</a></button>
             </article>
 
             <article>
@@ -30,8 +30,8 @@
                             <li><a href="index.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Base de datos</a></li>
                             <li><a href="pag1.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Composición</a></li>
                             <li><a href="pag2.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Importancia</a></li>
+                            <li><a href="pag3.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tipos</a></li>
                             <li><a href="pag4.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Gestores</a></li>
-                            <li><a href="pag5.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Modelos</a></li>
                             <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Formas Normales</a></li>
                         </ul>
                     </div>
@@ -44,13 +44,13 @@
 
         <div class="contenido">
             <h2 class="text-5xl text-center p-4 my-52">
-                ¿Todas las Bases de Datos son iguales?
+                ¿Que es el modelo Entidad-Relación?
             </h2>
 
             <article class="descripcion  my-4">
                 <p class="text-descripcion text-xl px-16 py-4 my-8 bg-red-500 rounded-lg">
-                    -Existen Varios tipos de bases de datos, entre ellos las más importantes son las relacionales
-                    y las no relacionales
+                    -las bases de datos a modo de estructura, siguen un modelo, visualizarlas de este modo
+                    ayuda a la comprensión y manejo de estas
                 </p>
 
             </article>
@@ -59,43 +59,44 @@
                 <article class="tarjeta bg-gray-500 hidden-element p-8 ">
                     <br>
 
-                    <h3 class="text-center text-3xl my-4 ">Bases Relacionales Y no Relacionales</h3>
+                    <h3 class="text-center text-3xl my-4 ">Modelo y Mapeo de las bases de datos</h3>
                     
                     <div class="info grid grid-cols-1 grid-rows-1 py-16">
                         <div class="texto-boton grid align-evenly justify-items-center">
                             <p class="mx-36">
-                                <span>Bases de datos SQL:</span> Almacenan los datos en tablas con filas y columnas. Cada tabla 
-                                tiene una clave primaria que identifica de manera única cada fila. Las relaciones entre las tablas 
-                                se establecen mediante claves externas.
+                                <span>Modelo Entidad-relación:</span> El Modelo Entidad-relación es una herramienta de 
+                                modelado de datos que se utiliza para representar la estructura lógica de una base de datos. 
                                 <br><br>
-                                <span>Estructura Tabular:</span> Los datos se organizan en tablas, lo que facilita la consulta y la manipulación 
-                                de datos mediante SQL (Structured Query Language).
+                                <span>Entidades:</span> Representan objetos o conceptos del mundo real que tienen 
+                                existencia independiente. Por ejemplo, en una base de datos de una tienda, las entidades 
+                                podrían ser Cliente, Producto y Pedido
                                 <br><br>
-                                <span>Integridad de Datos:</span> Las bases de datos relacionales aseguran la integridad de los datos mediante restricciones y reglas.
+                                <span>Atributos:</span>  Son las propiedades o características de las entidades. 
+                                Por ejemplo, un Cliente podría tener atributos como Nombre, Dirección y Teléfono.
                                 <br><br>
-                                <span>Transacciones ACID:</span> Garantizan que las transacciones sean atómicas, consistentes, aisladas y duraderas.
+                                <span>Relaciones:</span> Describen cómo se asocian las entidades entre sí. 
+                                Por ejemplo, un Cliente realiza un Pedido, y un Pedido contiene Productos
                                 <br>
                                 <br>
+                                <img class="mx-auto" src="imagenes/650_1200-removebg-preview.png" alt="" >
                                 <br>
                                 <br>
-                                <br>
-                                <br>
-                                <span>Bases de datos NoSQL:</span> Las bases de datos no relacionales no siguen el esquema tabular tradicional.
-                                En su lugar, utilizan diferentes modelos de datos, como documentos, grafos, columnas y pares clave-valor.
+                                <span>Mapeo objeto-relacional:</span> es una técnica que permite a los 
+                                desarrolladores interactuar con una base de datos relacional utilizando un lenguaje de 
+                                programación orientado a objetos. En lugar de escribir consultas SQL directamente, los 
+                                desarrolladores pueden trabajar con objetos que representan los datos en la base de datos. 
                                 <br><br>
-                                <span>Flexibilidad:</span> Permiten almacenar datos no estructurados y semiestructurados, 
-                                lo que las hace ideales para aplicaciones con requisitos de datos cambiantes.
+                                <span>Objetos y Clases:</span> En un ORM, las tablas de la base de datos se 
+                                mapean a clases en el lenguaje de programación, y las filas de las tablas se mapean a 
+                                instancias de esas clases.
                                 <br><br>
-                                <span>Escalabilidad Horizontal:</span> Pueden manejar grandes volúmenes de datos 
-                                distribuyendo la carga a través de múltiples servidores.
-                                <br>
-                                <br>
-                                <img class="mx-auto" src="imagenes/NoSQL4__1_-removebg-preview.png" alt="">
+                                <span>Consultas Simplificadas:</span>  Los ORMs permiten realizar operaciones 
+                                CRUD (Crear, Leer, Actualizar, Eliminar) de manera más intuitiva y con menos código SQL.
+                                <br><br>
+                                <img class="mx-auto" src="imagenes/orm.png" alt="">
                             </p>
                             
                         </div>
-                        
-                        
                     </div>
                 </article>
 

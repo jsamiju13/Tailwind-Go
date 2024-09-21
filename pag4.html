@@ -17,7 +17,7 @@
         <div class="barraTop grid fixed top-0 left-0 p-2 bg-white w-screen justify-between items-center">
             <article class="titulo grid gap-4 grid-cols-2 justify-start">
                 <img src="imagenes/logo bbb.png">
-                <button class="text-3xl" ><a href="index.html">Tipos Gestores de Bases de Datos</a></button>
+                <button class="text-3xl" ><a href="index.html">Gestores de Bases de Datos</a></button>
             </article>
 
             <article>
@@ -31,7 +31,7 @@
                             <li><a href="pag1.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Composición</a></li>
                             <li><a href="pag2.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Importancia</a></li>
                             <li><a href="pag3.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tipos</a></li>
-                            <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Modelos</a></li>
+                            <li><a href="pag5.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Modelos</a></li>
                             <li><a href="#" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Formas Normales</a></li>
                         </ul>
                     </div>
@@ -50,7 +50,7 @@
             <article class="descripcion  my-4">
                 <p class="text-descripcion text-xl px-16 py-4 my-8 bg-red-500 rounded-lg">
                     -Similar a las plataformas que cada lenguaje de programación tiene para manejarlo, las bases de datos tienen gestores
-                    donde mediante consola o interfaces gráficas podremos administrar correctamente las relaciones entre datos que necesitemos
+                    donde mediante consola o interfaces gráficas podremos administrar correctamente las relaciones entre los datos que necesitemos
                 </p>
 
             </article>
@@ -64,33 +64,67 @@
                     <div class="info grid grid-cols-1 grid-rows-1 py-16">
                         <div class="texto-boton grid align-evenly justify-items-center">
                             <p class="mx-36">
-                                <span>Bases de datos SQL:</span> Almacenan los datos en tablas con filas y columnas. Cada tabla 
-                                tiene una clave primaria que identifica de manera única cada fila. Las relaciones entre las tablas 
-                                se establecen mediante claves externas.
-                                <br><br>
-                                <span>Estructura Tabular:</span> Los datos se organizan en tablas, lo que facilita la consulta y la manipulación 
-                                de datos mediante SQL (Structured Query Language).
-                                <br><br>
-                                <span>Integridad de Datos:</span> Las bases de datos relacionales aseguran la integridad de los datos mediante restricciones y reglas.
-                                <br><br>
-                                <span>Transacciones ACID:</span> Garantizan que las transacciones sean atómicas, consistentes, aisladas y duraderas.
+                                <span>MySQL:</span> Es uno de los gestores de bases de datos relacionales más utilizados en el mundo,
+                                especialmente en aplicaciones web. Es conocido por su eficiencia, fiabilidad y facilidad de uso.
+                                MySQL es de código abierto y soporta múltiples plataformas.
                                 <br>
                                 <br>
+                                <img class="mx-auto" src="imagenes/J5Yt92WW_400x400-removebg-preview.png" alt="" >
                                 <br>
                                 <br>
+                                <span>PostgreSQL:</span> Es un potente gestor de bases de datos relacionales orientado a objetos. 
+                                Ofrece características avanzadas como transacciones ACID, integridad referencial, y soporte para tipos de datos 
+                                definidos por el usuario.
                                 <br>
                                 <br>
-                                <span>Bases de datos NoSQL:</span> Las bases de datos no relacionales no siguen el esquema tabular tradicional.
-                                En su lugar, utilizan diferentes modelos de datos, como documentos, grafos, columnas y pares clave-valor.
-                                <br><br>
-                                <span>Flexibilidad:</span> Permiten almacenar datos no estructurados y semiestructurados, 
-                                lo que las hace ideales para aplicaciones con requisitos de datos cambiantes.
-                                <br><br>
-                                <span>Escalabilidad Horizontal:</span> Pueden manejar grandes volúmenes de datos 
-                                distribuyendo la carga a través de múltiples servidores.
+                                <img class="mx-auto" src="imagenes/postgresql.png" alt="">
                                 <br>
                                 <br>
-                                <img class="mx-auto" src="imagenes/NoSQL4__1_-removebg-preview.png" alt="">
+                                <span>SQL Server:</span> Desarrollado por Microsoft, es conocido por su integración con otras
+                                herramientas de Microsoft y su capacidad para manejar grandes volúmenes de datos. 
+                                Ofrece características como transacciones ACID, seguridad avanzada y soporte para análisis de datos.
+                                <br>
+                                <br>
+                                <img class="mx-auto" src="imagenes/sqlserver.png" alt="">
+                                <br>
+                                <br>
+                                <span>Oracle:</span> Es uno de los gestores de bases de datos más robustos y utilizados en 
+                                grandes empresas. Ofrece una amplia gama de características avanzadas, incluyendo 
+                                soporte para grandes volúmenes de datos y alta disponibilidad
+                                <br>
+                                <br>
+                                <img class="mx-auto" src="imagenes/oracle.png" alt="">
+                                <br>
+                                <br>
+                                <span>MongoDB:</span> Es una base de datos orientada a documentos que almacena datos en formato JSON. 
+                                Es conocida por su flexibilidad y escalabilidad, lo que la hace ideal para aplicaciones con datos no 
+                                estructurados.
+                                <br>
+                                <br>
+                                <img class="mx-auto" src="imagenes/Mongo.png" alt="">
+                                <br>
+                                <br>
+                                <span>Cassandra:</span> Desarrollada por Apache, es una base de datos distribuida diseñada para manejar 
+                                grandes volúmenes de datos en múltiples servidores sin un punto único de fallo. 
+                                Es muy utilizada en aplicaciones que requieren alta disponibilidad y escalabilidad.
+                                <br>
+                                <br>
+                                <img class="mx-auto" src="imagenes/cassandra.png" alt="">
+                                <br>
+                                <br>
+                                <span>Redis:</span> Es una base de datos en memoria que se utiliza principalmente como caché y 
+                                almacén de datos clave-valor. Es conocida por su alta velocidad y eficiencia.
+                                <br>
+                                <br>
+                                <img class="mx-auto" src="imagenes/redis.png" alt="">
+                                <br>
+                                <br>
+                                Neo4j: Es una base de datos gráfica que utiliza nodos y relaciones para representar y almacenar datos. 
+                                Es ideal para aplicaciones que requieren modelar relaciones complejas, como redes sociales y 
+                                sistemas de recomendación
+                                <br>
+                                <br>
+                                <img class="mx-auto" src="imagenes/Neo4j-logo_color.png" alt="">
                             </p>
                             
                         </div>
