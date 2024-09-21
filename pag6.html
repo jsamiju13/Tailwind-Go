@@ -17,7 +17,7 @@
         <div class="barraTop grid fixed top-0 left-0 p-2 bg-white w-screen justify-between items-center">
             <article class="titulo grid gap-4 grid-cols-2 justify-start">
                 <img src="imagenes/logo bbb.png">
-                <button class="text-3xl" ><a href="index.html">Modelo de la Base de Datos</a></button>
+                <button class="text-3xl" ><a href="index.html">Formas Normales de la base de datos</a></button>
             </article>
 
             <article>
@@ -32,7 +32,7 @@
                             <li><a href="pag2.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Importancia</a></li>
                             <li><a href="pag3.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Tipos</a></li>
                             <li><a href="pag4.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Gestores</a></li>
-                            <li><a href="pag6.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Formas Normales</a></li>
+                            <li><a href="pag5.html" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">Modelo</a></li>
                         </ul>
                     </div>
                 
@@ -44,13 +44,13 @@
 
         <div class="contenido">
             <h2 class="text-5xl text-center p-4 my-52">
-                ¿Que es el modelo Entidad-Relación?
+                ¿Cuales son las formas normales?
             </h2>
 
             <article class="descripcion  my-4">
                 <p class="text-descripcion text-xl px-16 py-4 my-8 bg-red-500 rounded-lg">
-                    -las bases de datos a modo de estructura, siguen un modelo, visualizarlas de este modo
-                    ayuda a la comprensión y manejo de estas
+                    -Similar a las reglas del pep8 en python, Las bases de datos cuentan con una normativa que ayuda a 
+                    desarrolladores a formular bases de datos organizadas y con un funcionamiento correcto
                 </p>
 
             </article>
@@ -59,41 +59,48 @@
                 <article class="tarjeta bg-gray-500 hidden-element p-8 ">
                     <br>
 
-                    <h3 class="text-center text-3xl my-4 ">Modelo y Mapeo de las bases de datos</h3>
+                    <h3 class="text-center text-3xl my-4 ">Normalización de la Base de Datos</h3>
                     
                     <div class="info grid grid-cols-1 grid-rows-1 py-16">
                         <div class="texto-boton grid align-evenly justify-items-center">
                             <p class="mx-36">
-                                <span>Modelo Entidad-relación:</span> El Modelo Entidad-relación es una herramienta de 
-                                modelado de datos que se utiliza para representar la estructura lógica de una base de datos. 
+                                <span>Primera Forma:</span> 
                                 <br><br>
-                                <span>* Entidades:</span> Representan objetos o conceptos del mundo real que tienen 
-                                existencia independiente. Por ejemplo, en una base de datos de una tienda, las entidades 
-                                podrían ser Cliente, Producto y Pedido
+                                <span>* Requisitos:</span> Cada columna debe contener valores atómicos (indivisibles) y cada entrada en una 
+                                columna debe ser del mismo tipo de datos.
                                 <br><br>
-                                <span>* Atributos:</span>  Son las propiedades o características de las entidades. 
-                                Por ejemplo, un Cliente podría tener atributos como Nombre, Dirección y Teléfono.
+                                <span>* Propósito:</span> Eliminar duplicados y asegurar que cada campo contenga solo un valor.
                                 <br><br>
-                                <span>* Relaciones:</span> Describen cómo se asocian las entidades entre sí. 
-                                Por ejemplo, un Cliente realiza un Pedido, y un Pedido contiene Productos
+                                <span>* Ejemplo:</span> Una tabla de Clientes donde cada cliente tiene una sola dirección en una columna específica.
                                 <br>
                                 <br>
-                                <img class="mx-auto" src="imagenes/650_1200-removebg-preview.png" alt="" >
                                 <br>
                                 <br>
-                                <span>Mapeo objeto-relacional:</span> es una técnica que permite a los 
-                                desarrolladores interactuar con una base de datos relacional utilizando un lenguaje de 
-                                programación orientado a objetos. En lugar de escribir consultas SQL directamente, los 
-                                desarrolladores pueden trabajar con objetos que representan los datos en la base de datos. 
+                                <span>Segunda Forma:</span>  
                                 <br><br>
-                                <span>* Objetos y Clases:</span> En un ORM, las tablas de la base de datos se 
-                                mapean a clases en el lenguaje de programación, y las filas de las tablas se mapean a 
-                                instancias de esas clases.
+                                <span>* Requisitos:</span> Debe cumplir con 1NF y todos los atributos no clave deben 
+                                depender completamente de la clave primaria.
                                 <br><br>
-                                <span>* Consultas Simplificadas:</span>  Los ORMs permiten realizar operaciones 
-                                CRUD (Crear, Leer, Actualizar, Eliminar) de manera más intuitiva y con menos código SQL.
+                                <span>* Propósito:</span> Eliminar la redundancia parcial, es decir, evitar que los 
+                                atributos dependan solo de una parte de la clave primaria en tablas con claves compuestas.
                                 <br><br>
-                                <img class="mx-auto" src="imagenes/orm.png" alt="">
+                                <span>* Ejemplo:</span> Una tabla de Pedidos donde cada pedido tiene un ID de Pedido y un 
+                                ID de Producto, y los detalles del producto dependen completamente del ID de Producto
+                                <br>
+                                <br>
+                                <br>
+                                <br>
+                                <span>Tercera Forma:</span>  
+                                <br><br>
+                                <span>* Requisitos:</span> Debe cumplir con 2NF y todos los atributos no clave 
+                                deben depender únicamente de la clave primaria, no de otros atributos no clave.
+                                <br><br>
+                                <span>* Propósito:</span> Eliminar la dependencia transitiva, es decir, 
+                                evitar que un atributo no clave dependa de otro atributo no clave.
+                                <br><br>
+                                <span>* Ejemplo:</span> Una tabla de Empleados donde cada empleado tiene un 
+                                ID de Empleado, y los detalles del departamento no dependen de otros atributos 
+                                como el Nombre del Empleado
                             </p>
                             
                         </div>
