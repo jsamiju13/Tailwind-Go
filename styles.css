@@ -3,6 +3,7 @@
     font-family: 'Lovelo', sans-serif;
     font-weight: bold;
     scrollbar-width: none;
+    transition: all 0.5s ease-in;
 }
 
 .hidden-element {
@@ -60,7 +61,7 @@ h3{
 }
 .barraTop i{
     color: black;
-    font-size: 2vw;
+    font-size: 2rem;
 }
 
 .descripcion p{

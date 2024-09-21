@@ -9,7 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="pags.css">
     <link href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" rel="stylesheet">
-    
+    <audio src="sonido_boton_click.mp3" class="botonSonido"></audio>
 </head>
 <body>
     <div class="general grid gap-8 pb-8 items-center justify-center h-screen overflow-auto">
@@ -17,7 +17,7 @@
         <section class="barraTop grid fixed top-0 left-0 p-2 bg-white w-screen justify-between items-center">
             <article class="titulo grid gap-4 grid-cols-2 justify-start">
                 <img src="imagenes/logo bbb.png">
-                <button class="text-3xl" ><a href="index.html">Formas Normales de la base de datos</a></button>
+                <button class="text-lg xl:text-3xl" ><a href="index.html">Formas Normales de <br> la base de datos</a></button>
             </article>
 
             <article>
@@ -43,27 +43,28 @@
         <br>
 
         <section class="contenido">
-            <h2 class="text-5xl text-center p-4 my-52">
+            <h2 class="text-xl xl:text-5xl text-center p-4 my-52 hidden-element">
                 ¿Cuales son las formas normales?
             </h2>
 
-            <article class="descripcion  my-4">
-                <p class="text-descripcion text-xl px-16 py-4 my-8 bg-red-500 rounded-lg">
+            <article class="descripcion  my-4 hidden-element">
+                <p class="text-descripcion text-sm xl:text-xl px-4 xl:px-16 py-4 my-8 bg-red-500 rounded-lg">
                     -Similar a las reglas del pep8 en python, Las bases de datos cuentan con una normativa que ayuda a 
                     desarrolladores a formular bases de datos organizadas y con un funcionamiento correcto
                 </p>
 
             </article>
 
-            <div class="tarjetas items-center mx-8 p-2 bg-gray-500 rounded-lg ">
-                <article class="tarjeta bg-gray-500 hidden-element p-8 ">
+            <div class="tarjetas items-center xl:mx-8 p-2 bg-gray-500 rounded-lg hidden-element">
+
+                <article class="tarjeta bg-gray-500 hidden-element xl:p-8 ">
                     <br>
 
-                    <h3 class="text-center text-3xl my-4 ">Normalización de la Base de Datos</h3>
+                    <h3 class="text-center text-2xl xl:text-3xl xl:my-4 ">Normalización de la Base de Datos</h3>
                     
                     <div class="info grid grid-cols-1 grid-rows-1 py-16">
                         <div class="texto-boton grid align-evenly justify-items-center">
-                            <p class="mx-36">
+                            <p class="mx-4 xl:mx-36">
                                 <span>Primera Forma:</span> 
                                 <br><br>
                                 <span>* Requisitos:</span> Cada columna debe contener valores atómicos (indivisibles) y cada entrada en una 
