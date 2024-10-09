@@ -1,0 +1,26 @@
+CREATE TABLE indiviuo(
+
+	id_identidad int not null PRIMARY KEY IDENTITY,
+	nombre varchar(20),
+	fecha_nacimiento date
+);
+
+INSERT INTO indiviuo(nombre,fecha_nacimiento) VALUES('geyber','2003-05-18')
+INSERT INTO indiviuo (nombre, fecha_nacimiento) 
+VALUES 
+('Ana', '1995-03-22'),
+('Carlos', '1988-07-11'),
+('María', '2002-12-05');
+
+INSERT INTO indiviuo (nombre, fecha_nacimiento) 
+VALUES 
+('Pedro', '1972-07-27'),
+('Alejandro', '2000-01-18'),
+('Messi', '2012-11-01');
+
+SELECT 
+    CASE 
+        WHEN MONTH(GETDATE()) > MONTH(fecha_nacimiento) OR (MONTH(GETDATE()) = MONTH(fecha_nacimiento) AND DAY(GETDATE()) >= DAY(fecha_nacimiento))
+        THEN DATEDIFF(YEAR, fecha_nacimiento, GETDATE()) ELSE DATEDIFF(YEAR, fecha_nacimiento, GETDATE()) - 1
+    END AS Edad
+FROM indiviuo;
