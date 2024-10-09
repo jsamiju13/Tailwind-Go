@@ -24,3 +24,10 @@ SELECT
         THEN DATEDIFF(YEAR, fecha_nacimiento, GETDATE()) ELSE DATEDIFF(YEAR, fecha_nacimiento, GETDATE()) - 1
     END AS Edad
 FROM indiviuo;
+
+SELECT 
+    nombre,
+    fecha_nacimiento,
+    FLOOR(DATEDIFF(DAY, fecha_nacimiento, GETDATE()) / 360.0) AS Edad
+FROM 
+    indiviuo;
