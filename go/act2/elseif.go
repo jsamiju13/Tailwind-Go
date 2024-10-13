@@ -5,16 +5,9 @@ import (
 	"fmt"
 	"math/rand"
 	"os"
-	"os/exec"
 	"strings"
 	"time"
 )
-
-func clearConsole() {
-	cmd := exec.Command("cmd", "/c", "cls")
-	cmd.Stdout = os.Stdout
-	cmd.Run()
-}
 
 func main() {
 
@@ -28,13 +21,11 @@ func main() {
 	fmt.Println("Ingresa una lista de nombres que te gusten:")
 	lectura.Scan()
 	nombres := strings.Split(lectura.Text(), " ")
-	clearConsole()
 	fmt.Println("**********CREADOR DE AVATARES**********")
 
 	fmt.Println("Ingresa una lista de apellidos que te gusten:")
 	lectura.Scan()
 	apellidos := strings.Split(lectura.Text(), " ")
-	clearConsole()
 	fmt.Println("**********CREADOR DE AVATARES**********")
 
 	avataresPosibles := len(nombres) * len(apellidos)
@@ -50,7 +41,6 @@ func main() {
 	fmt.Println("1. ¿Cuantas vocales tiene mi avatar? 2. ¿Cuantos posibles avatares hay?")
 	lectura.Scan()
 
-	clearConsole()
 	fmt.Println("**********CREADOR DE AVATARES**********")
 
 	if lectura.Text() == "1" {
