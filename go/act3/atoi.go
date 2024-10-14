@@ -4,16 +4,9 @@ import (
 	"bufio"
 	"fmt"
 	"os"
-	"os/exec"
 	"strconv"
 	"strings"
 )
-
-func clearConsole() {
-	cmd := exec.Command("cmd", "/c", "cls")
-	cmd.Stdout = os.Stdout
-	cmd.Run()
-}
 
 func main() {
 
@@ -37,7 +30,6 @@ func main() {
 	hour, _ := strconv.Atoi(hourStr)
 	seconds := float64(hour) * 3600
 
-	clearConsole()
 	fmt.Println("**********SUPER CONVERSOR DE UNIDADES**********")
 	fmt.Printf("%d kilómetros son %.2f millas.\n", km, miles)
 	fmt.Printf("%d kilogramos son %.3f libras.\n", kg, pounds)
