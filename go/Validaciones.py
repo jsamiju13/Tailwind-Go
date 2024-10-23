@@ -39,6 +39,23 @@ def validarRango(mensaje, iz=0, der=None): #INTRODUCE EL RANGO IZQUIERDO, LUEGO 
         except ValueError:
             print("Eso no es un numero")
 
+def validarRangoConocido(numero, iz=0, der=None): #INTRODUCE EL RANGO IZQUIERDO, LUEGO EL DERECHO Y LUEGO EL MENSAJE QUE QUIERAS QUE SE REPRODUZCA
+    while True:
+        try:
+            if der == None:
+                if numero < iz:
+                    print("el nuermo que ha ingresado no puede ser menor a ", iz)
+                else:
+                    return numero
+
+            elif iz <= numero <= der:
+                return numero
+            else:
+                print("El Numero está fuera de rango")
+                numero = int(input("Reingrese su numero\n"))
+        except ValueError:
+            print("Eso no es un numero")
+
 
 def validarRangoInverso(min, max, mensaje): #INTRODUCE EL RANGO MINIMO, LUEGO EL MAXIMO Y LUEGO EL MENSAJE QUE QUIERAS QUE SE REPRODUZCA
     while True:
@@ -50,6 +67,26 @@ def validarRangoInverso(min, max, mensaje): #INTRODUCE EL RANGO MINIMO, LUEGO EL
                 print("ese numero no está en el rango")
         except ValueError:
             print("Eso no es un numero")
+
+def validarDigito(mensaje):
+    while True:
+        cadena = input(mensaje)
+        if cadena.isdigit():
+            return cadena
+        else:
+            print("Su cadena solo debe contener digitos")
+
+def validarLetra(mensaje):
+    while True:
+        nombre = input(mensaje)
+        nom = nombre.split(" ")
+        for i in nom:
+            if not i.isalpha():
+                print("El nombre ingresado contiene caracteres no permitidos")
+                break
+        else:
+            return nombre
+            break
 
 
 def superficie(dim1=None,dim2=None,dim3=None):
