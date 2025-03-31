@@ -1,0 +1,29 @@
+{{ define "editar"}}
+
+{{template "cabecera"}}
+
+<main class="container mx-auto mt-8 p-4 bg-white shadow-md rounded"> 
+    <h2 class="text-2xl font-semibold mb-4">Formulario de Edición</h2> 
+    <form action="/actualizar" method="POST" class="space-y-4"> 
+
+        <input type="hidden" id="Id" name="id" value="{{.Id}}">
+
+        <div> 
+            <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre</label> 
+            <input type="text" id="Nombre" value={{.Nombre}} name="nombre" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required> </div> 
+            <div> 
+                <label for="precio" class="block text-sm font-medium text-gray-700">Precio</label> 
+                <input type="number" id="Precio" value={{.Precio}} name="precio" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required> </div> 
+                    <div> 
+                        <label for="stock" class="block text-sm font-medium text-gray-700">Stock Inicial</label> 
+                        <input type="number" id="Stock" value={{.Stock}} name="stock" class="mt-1 block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm" required> </div> 
+                        <div> 
+                            <button type="submit" class="w-full bg-indigo-600 text-white p-2 rounded-md shadow-sm hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Editar Producto</button> 
+                        </div> 
+                    </form> 
+                </main>
+
+
+{{template "pie"}}
+
+{{end}}

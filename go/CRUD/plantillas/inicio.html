@@ -1,0 +1,33 @@
+{{ define "inicio" }}
+
+{{ template "cabecera"}}
+
+    <table class="min-w-full bg-white border border-gray-200">
+      <thead>
+        <tr>
+          <th class="py-4 px-4 border-b border-gray-200">ID</th>
+          <th class="py-4 px-4 border-b border-gray-200">Nombre</th>
+          <th class="py-4 px-4 border-b border-gray-200">Precio</th>
+          <th class="py-4 px-4 border-b border-gray-200">Stock</th>
+          <th class="py-4 px-4 border-b border-gray-200">Opciones</th>
+        </tr>
+      </thead>
+
+      <tbody>
+      {{range.}}
+
+        <tr>
+          <td class="py-3 px-4 border-b border-gray-200">{{.Id}}</td>
+          <td class="py-3 px-4 border-b border-gray-200">{{.Nombre}}</td>
+          <td class="py-3 px-4 border-b border-gray-200">{{.Precio}}</td>
+          <td class="py-3 px-4 border-b border-gray-200">{{.Stock}}</td>
+          <td class="py-3 px-4 border-b border-gray-200"><a class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" href="/editar?id={{.Id}}"> Editar </a>  |  <a class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 rounded" href="/borrar?id={{.Id}}"> Borrar </a></td>
+        </tr>
+
+      {{end}}
+      </tbody>
+
+    </table>
+
+{{ template "pie"}}
+{{ end }}
